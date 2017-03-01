@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.lhj.demo.MainActivity">
 
-    <TextView
+    <Button
+        android:onClick="pushPatchBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+        android:text="加载补丁"/>
+
+    <Button
+        android:onClick="killProgressBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="杀死程序"
+        />
+    <Button
+        android:onClick="showInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示补丁信息"
+        />
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="修改的内容，哇哈哈"-->
+        <!--android:textColor="#f0f"-->
+        <!--/>-->
+</LinearLayout>
